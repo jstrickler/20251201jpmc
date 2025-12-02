@@ -86,6 +86,7 @@ class President():
     def party(self):
         return self._party
 
+
 if __name__ == '__main__':
     p = President(26)
     print(p)

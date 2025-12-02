@@ -15,10 +15,7 @@ things = (
 
 print("Name               Module?  Function?  Class?  Method?")
 for thing in things:
-    try:
-        thing_name = thing.__name__
-    except AttributeError:
-        thing_name = type(thing).__name__ + " instance"
+    thing_name = getattr(thing, "__name__", type(thing).__name__ + " instance")
     print("{:18s} {!s:6s}   {!s:6s}     {!s:6s}  {!s:6s}".format(
         thing_name,
         inspect.ismodule(thing),  # test for module
@@ -29,7 +26,7 @@ for thing in things:
 
 
 print()
-def spam(p1, p2='a', *p3, p4, p5='b', **p6):  # define a function
+def spam(p1: int, p2: str='a', *p3: float, p4: list, p5: str='b', **p6) -> None:  # define a function
     print(p1, p2, p3, p4, p5, p6)
 
 # get argument specifications for a function
