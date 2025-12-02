@@ -14,8 +14,10 @@ def colors():
 
 @pytest.fixture
 def before_after():
+    # setup
     print("\n******* BEFORE! *******")
     yield 100
+    # teardown
     print("\n******* AFTER! *******")
 
 def test_get_five_returns_five(spam):
