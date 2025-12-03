@@ -4,5 +4,7 @@ def trimmed(file_name):
             yield line.rstrip('\n\r')  # 'yield' causes this function to return a generator object
 
 mary_in = trimmed('../DATA/mary.txt')
+print(f"{mary_in = }")
+
 for trimmed_line in mary_in:
     print(trimmed_line)
