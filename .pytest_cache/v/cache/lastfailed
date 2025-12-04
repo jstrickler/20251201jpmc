@@ -1,0 +1,7 @@
+{
+  "EXAMPLES/hamlib/tests/test_hamlib.py": true,
+  "EXAMPLES/spamlib/tests/test_spam.py": true,
+  "EXAMPLES/tests/test_mark.py::test_one": true,
+  "EXAMPLES/tests/test_mark.py::test_two": true,
+  "EXAMPLES/tests/test_mark.py::test_three": true
+}

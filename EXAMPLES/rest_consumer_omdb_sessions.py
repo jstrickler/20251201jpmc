@@ -10,6 +10,8 @@ OMDB_URL = "http://www.omdbapi.com"
 MOVIE_TITLES = [
     'Black Panther',
     'Frozen',
+    'Wicked',
+    'Wicked: For Good',
     'Top Gun: Maverick',
     'Bullet Train',
     'Death on the Nile',
@@ -28,7 +30,7 @@ def main():
                 print(f"raw_data['Director']: {raw_data['Director']}")
                 print(f"raw_data['Year']: {raw_data['Year']}")
                 print(f"raw_data['Runtime']: {raw_data['Runtime']}")
-                print()
+                print('-' * 60)
 
 
 
